@@ -103,12 +103,15 @@ function Admin() {
     setLoading(true)
     try {
       if (editingId) {
-        const { id, ...updateData } = boletinMensual
-        const { error } = await supabase
+        const { id, created_at, ...updateData } = boletinMensual
+        console.log('Updating with data:', updateData)
+        const { data, error } = await supabase
           .from('boletines_mensuales')
           .update(updateData)
           .eq('id', editingId)
+          .select()
         if (error) throw error
+        console.log('Update successful:', data)
         setMessage('✅ Boletín mensual actualizado exitosamente')
         setEditingId(null)
       } else {
@@ -161,12 +164,15 @@ function Admin() {
     setLoading(true)
     try {
       if (editingId) {
-        const { id, ...updateData } = informativoMensual
-        const { error } = await supabase
+        const { id, created_at, ...updateData } = informativoMensual
+        console.log('Updating informativo with data:', updateData)
+        const { data, error } = await supabase
           .from('informativos_mensuales')
           .update(updateData)
           .eq('id', editingId)
+          .select()
         if (error) throw error
+        console.log('Update successful:', data)
         setMessage('✅ Informativo mensual actualizado exitosamente')
         setEditingId(null)
       } else {
@@ -219,12 +225,15 @@ function Admin() {
     setLoading(true)
     try {
       if (editingId) {
-        const { id, ...updateData } = boletinAnual
-        const { error } = await supabase
+        const { id, created_at, ...updateData } = boletinAnual
+        console.log('Updating boletin anual with data:', updateData)
+        const { data, error } = await supabase
           .from('boletines_anuales')
           .update(updateData)
           .eq('id', editingId)
+          .select()
         if (error) throw error
+        console.log('Update successful:', data)
         setMessage('✅ Boletín anual actualizado exitosamente')
         setEditingId(null)
       } else {
@@ -276,12 +285,15 @@ function Admin() {
     setLoading(true)
     try {
       if (editingId) {
-        const { id, ...updateData } = foto
-        const { error } = await supabase
+        const { id, created_at, ...updateData } = foto
+        console.log('Updating foto with data:', updateData)
+        const { data, error } = await supabase
           .from('fotogaleria')
           .update(updateData)
           .eq('id', editingId)
+          .select()
         if (error) throw error
+        console.log('Update successful:', data)
         setMessage('✅ Foto actualizada exitosamente')
         setEditingId(null)
       } else {
