@@ -244,7 +244,7 @@ function Home() {
             <motion.div variants={fadeInRight} className="order-2 md:order-1">
               <div className="relative overflow-hidden rounded-lg border border-gray-300 shadow-lg">
                 <img 
-                  src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=800" 
+                  src="/fotosemestral.png" 
                   alt="Fotogalería Semestrales"
                   className="w-full h-full object-cover aspect-[4/3] hover:scale-105 transition-transform duration-500"
                 />
@@ -286,7 +286,7 @@ function Home() {
             <motion.div variants={fadeInLeft} className="order-2 md:order-1">
               <div className="relative overflow-hidden rounded-lg border border-gray-300 shadow-lg">
                 <img 
-                  src="https://images.unsplash.com/photo-1511578314322-379afb476865?w=800" 
+                  src="/fotoanual.png" 
                   alt="Fotogalería Anuales"
                   className="w-full h-full object-cover aspect-[4/3] hover:scale-105 transition-transform duration-500"
                 />
