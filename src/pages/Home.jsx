@@ -75,7 +75,7 @@ function Home() {
             </div>
             <div className="hidden md:flex space-x-8 text-lg">
               <a href="https://examurpbvi.vercel.app/" target="_blank" rel="noopener noreferrer" className="text-gray-700 hover:text-gray-900 transition-colors">ExamURP</a>
-              <a href="#" className="text-gray-700 hover:text-gray-900 transition-colors opacity-50 cursor-not-allowed">Estantería Virtual</a>
+              <a href="https://sites.google.com/urp.edu.pe/bviestanteriavirtual/inicio" target="_blank" rel="noopener noreferrer" className="text-gray-700 hover:text-gray-900 transition-colors">Estantería Virtual</a>
               <a href="https://www.urp.edu.pe/pregrado/facultad-de-ingenieria/bvi/" target="_blank" rel="noopener noreferrer" className="text-gray-700 hover:text-gray-900 transition-colors">Página Oficial URP</a>
               <a href="https://landingsemanaing.vercel.app/" target="_blank" rel="noopener noreferrer" className="text-gray-700 hover:text-gray-900 transition-colors">Semana Ingeniería</a>
               <Link to="/login" className="text-gray-700 hover:text-gray-900 transition-colors">Login</Link>
